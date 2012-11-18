@@ -1,0 +1,174 @@
+#frame {
+    margin: 1em auto;
+    position: relative;
+    width: 95%;
+    border: 1px solid #555;
+    -webkit-box-shadow: 0px 0px 10px 5px #ccc;
+    box-shadow: 0px 0px 10px 5px #ccc;
+    overflow: hidden;
+}
+#backdrop {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+figure {
+    position: absolute;
+    background: no-repeat top left; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#tree {
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 82%;
+    background-image: url(../img/tree.png);
+}
+
+#sheep {
+    z-index: 4;
+    top: 75%;
+    left: 20%;
+    width: 19%;
+    height: 21.7%;
+    background-image: url(../img/sheep.png);
+}
+
+#balloons {
+    z-index: 5;
+    left: 30%;
+    top: 15%;
+    width: 27%;
+    height: 47%;
+    background-image: url(../img/balloons.png);
+}
+
+#barrel {
+    z-index: 6;
+    left: 45%;
+    bottom: 10%;
+    width: 13%;
+    height: 21%;
+    background-image: url(../img/barrel.png);
+}
+
+#cake {
+    z-index: 7;
+    right: 15%;
+    bottom: 5%;
+    width: 13%;
+    height: 21%;
+    background-image: url(../img/cake.png);
+}
+
+#barn {
+    z-index: 8;
+    right: 0;
+    top: 25%;
+    width: 30%;
+    height: 48%;
+    background-image: url(../img/barn.png);
+}
+
+#afro-pig {
+    z-index: 2;
+    opacity: 1;
+    width: 10%;
+    height: 21%;
+    background-image: url(../img/afro-pig.png);
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    opacity: 0;
+}
+
+#afro-pig.tree {
+    top: 7%;
+    left: 5%;
+}
+#afro-pig.tree.show {
+    left: 17%;
+}
+
+#afro-pig.sheep {
+    bottom: 5%;
+    left: 25%;
+    width: 8%;
+    height: 18%;
+}
+#afro-pig.sheep.show {
+    bottom: 25%;
+    height: 21%;
+    width: 10%;
+}
+
+#afro-pig.balloons {
+    top: 28%;
+    left: 38%;
+}
+#afro-pig.balloons.show {
+    top: 43%;
+    left: 27%;
+}
+
+#afro-pig.barrel {
+    left: 46.5%;
+    bottom: 10.5%;
+    height: 20%;
+}
+#afro-pig.barrel.show {
+    left: 58%;
+    height: 21%;
+}
+
+#afro-pig.cake {
+    right: 17%;
+    bottom: 6%;
+    height: 16%;
+    width: 8%;
+}
+#afro-pig.cake.show {
+    right: 28%;
+    bottom: 6%;
+    height: 21%;
+    width: 10%;
+}
+
+#afro-pig.barn {
+    right: 20%;
+    top: 46%;
+}
+#afro-pig.barn.show {
+    right: 32%;
+    top: 46%;
+}
+
+#frame div {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 20%;
+    font-size: 50px;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+    filter: dropshadow(color=#000, offx=0, offy=0);
+    font-family: 'Gorditas', cursive;
+    display: none;
+}
+
+#frame a {
+    color: green;
+}
